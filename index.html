@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Memoria del Árbol</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         LOADER
+    ========================== -->
+
+    <div id="loader">
+
+        <div class="loader-tree">🌳</div>
+
+        <p>Preparando tu historia...</p>
+
+    </div>
+
+
+    <!-- =========================
+         NAVEGACIÓN
+    ========================== -->
+
+    <nav id="navbar">
+
+        <div class="logo">
+            🌱 La memoria del árbol
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#inicio">Inicio</a>
+            <a href="#raices-section">Raíces</a>
+            <a href="#tronco-section">Tronco</a>
+            <a href="#ramas-section">Ramas</a>
+            <a href="#hojas-section">Hojas</a>
+            <a href="#frutos-section">Frutos</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         PROGRESO
+    ========================== -->
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+
+    <section id="inicio" class="intro">
+
+        <div class="intro-content">
+
+            <div class="seed">🌱</div>
+
+            <h1>
+                La memoria del árbol
+            </h1>
+
+            <p>
+                Todos tenemos una historia que contar.
+                Una historia formada por nuestras raíces,
+                nuestras decisiones, nuestros recuerdos
+                y las personas que han dejado huella en nosotros.
+            </p>
+
+            <button id="start-btn">
+                Comenzar mi recorrido
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ÁRBOL
+    ========================== -->
+
+    <div id="tree-container">
+
+        <div id="tree">
+
+            <div class="ground"></div>
+
+
+            <!-- COPA -->
+
+            <div class="tree-canopy">
+
+                <div class="canopy-leaf leaf-a">🍃</div>
+                <div class="canopy-leaf leaf-b">🍃</div>
+                <div class="canopy-leaf leaf-c">🌿</div>
+                <div class="canopy-leaf leaf-d">🍃</div>
+                <div class="canopy-leaf leaf-e">🌿</div>
+                <div class="canopy-leaf leaf-f">🍃</div>
+                <div class="canopy-leaf leaf-g">🌿</div>
+                <div class="canopy-leaf leaf-h">🍃</div>
+                <div class="canopy-leaf leaf-i">🌿</div>
+                <div class="canopy-leaf leaf-j">🍃</div>
+
+            </div>
+
+
+            <!-- FRUTOS -->
+
+            <div class="tree-part frutos" data-part="frutos">
+
+                <button class="fruit" data-info="experiencia">
+                    🍎
+                </button>
+
+                <button class="fruit" data-info="conocimiento">
+                    🍎
+                </button>
+
+                <button
+                    class="fruit special-fruit"
+                    data-info="identidad-fruto"
+                >
+                    🍎
+                </button>
+
+            </div>
+
+
+            <!-- HOJAS -->
+
+            <div class="tree-part hojas" data-part="hojas">
+
+                <button
+                    class="interactive-leaf leaf-1"
+                    data-info="pregunta1"
+                >
+                    🍃
+                </button>
+
+                <button
+                    class="interactive-leaf leaf-2"
+                    data-info="pregunta2"
+                >
+                    🍃
+                </button>
+
+                <button
+                    class="interactive-leaf leaf-3"
+                    data-info="pregunta3"
+                >
+                    🍃
+                </button>
+
+                <button
+                    class="interactive-leaf leaf-4"
+                    data-info="pregunta4"
+                >
+                    🍃
+                </button>
+
+            </div>
+
+
+            <!-- RAMAS -->
+
+            <div class="tree-part ramas" data-part="ramas">
+
+                <div class="branch branch-left"></div>
+                <div class="branch branch-right"></div>
+                <div class="branch branch-center"></div>
+
+                <button
+                    class="branch-point point-left"
+                    data-info="decisiones"
+                >
+                    ✦
+                </button>
+
+                <button
+                    class="branch-point point-right"
+                    data-info="caminos"
+                >
+                    ✦
+                </button>
+
+            </div>
+
+
+            <!-- TRONCO -->
+
+            <div class="tree-part tronco" data-part="tronco">
+
+                <div class="trunk-main"></div>
+
+                <button
+                    class="trunk-point"
+                    data-info="tronco"
+                >
+                    🌳
+                </button>
+
+            </div>
+
+
+            <!-- RAÍCES -->
+
+            <div class="tree-part raices" data-part="raices">
+
+                <div class="root root-1"></div>
+                <div class="root root-2"></div>
+                <div class="root root-3"></div>
+                <div class="root root-4"></div>
+                <div class="root root-5"></div>
+
+                <button
+                    class="root-point root-point-1"
+                    data-info="familia"
+                >
+                    ✦
+                </button>
+
+                <button
+                    class="root-point root-point-2"
+                    data-info="infancia"
+                >
+                    ✦
+                </button>
+
+                <button
+                    class="root-point root-point-3"
+                    data-info="recuerdos"
+                >
+                    ✦
+                </button>
+
+                <button
+                    class="root-point root-point-4"
+                    data-info="personas"
+                >
+                    ✦
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         CONTENIDO
+    ========================== -->
+
+    <main id="journey">
+
+
+        <!-- RAÍCES -->
+
+        <section
+            id="raices-section"
+            class="journey-section"
+            data-active-part="raices"
+        >
+
+            <div class="section-number">01</div>
+
+            <h2>🌱 Tus raíces</h2>
+
+            <p class="section-intro">
+                Antes de crecer, todo árbol necesita raíces.
+                Nuestras raíces representan aquello que nos
+                construyó durante nuestros primeros años.
+            </p>
+
+            <div class="instruction">
+                <span>💡</span>
+                Haz clic en las estrellas de las raíces.
+            </div>
+
+            <div class="question-card">
+
+                <h3>¿De dónde vienes?</h3>
+
+                <p>
+                    Piensa en tu familia, tu infancia,
+                    el lugar donde creciste y las personas
+                    que estuvieron presentes en tus primeros años.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- TRONCO -->
+
+        <section
+            id="tronco-section"
+            class="journey-section"
+            data-active-part="tronco"
+        >
+
+            <div class="section-number">02</div>
+
+            <h2>🌳 Tu tronco</h2>
+
+            <p class="section-intro">
+                El tronco representa aquello que sostiene
+                tu identidad: tus pensamientos, tu voluntad,
+                tu inteligencia y tu libertad.
+            </p>
+
+            <div class="instruction">
+                <span>💡</span>
+                Explora el centro del árbol.
+            </div>
+
+            <div class="concept-grid">
+
+                <button class="concept" data-concept="voluntad">
+                    <span>🧠</span>
+                    <strong>Voluntad</strong>
+                    <small>La capacidad de decidir.</small>
+                </button>
+
+                <button class="concept" data-concept="inteligencia">
+                    <span>💡</span>
+                    <strong>Inteligencia</strong>
+                    <small>Comprender y aprender.</small>
+                </button>
+
+                <button class="concept" data-concept="libertad">
+                    <span>🕊️</span>
+                    <strong>Libertad</strong>
+                    <small>Elegir nuestro propio camino.</small>
+                </button>
+
+                <button class="concept" data-concept="identidad">
+                    <span>🪞</span>
+                    <strong>Identidad</strong>
+                    <small>Lo que nos hace únicos.</small>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- RAMAS -->
+
+        <section
+            id="ramas-section"
+            class="journey-section"
+            data-active-part="ramas"
+        >
+
+            <div class="section-number">03</div>
+
+            <h2>🌿 Tus ramas</h2>
+
+            <p class="section-intro">
+                Las ramas representan las decisiones
+                que tomamos y los diferentes caminos
+                que podemos seguir.
+            </p>
+
+            <div class="instruction">
+                <span>💡</span>
+                Explora las ramas del árbol.
+            </div>
+
+            <div class="decision-box">
+
+                <h3>
+                    Cada decisión abre un camino.
+                </h3>
+
+                <p>
+                    Algunas decisiones cambian nuestra vida,
+                    mientras que otras parecen pequeñas.
+                    Todas forman parte de nuestra historia.
+                </p>
+
+                <div class="decision-buttons">
+
+                    <button data-info="decisiones">
+                        🛤️ Mis decisiones
+                    </button>
+
+                    <button data-info="caminos">
+                        🧭 Mis caminos
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HOJAS -->
+
+        <section
+            id="hojas-section"
+            class="journey-section"
+            data-active-part="hojas"
+        >
+
+            <div class="section-number">04</div>
+
+            <h2>🍃 Tus hojas</h2>
+
+            <p class="section-intro">
+                Las hojas representan las preguntas
+                que nos hacemos mientras descubrimos
+                quiénes somos.
+            </p>
+
+            <div class="instruction">
+                <span>💡</span>
+                Haz clic en las hojas interactivas.
+            </div>
+
+            <div class="reflection-grid">
+
+                <div class="reflection">
+                    <span>❓</span>
+                    <p>¿Quién soy?</p>
+                </div>
+
+                <div class="reflection">
+                    <span>❓</span>
+                    <p>¿Qué quiero ser?</p>
+                </div>
+
+                <div class="reflection">
+                    <span>❓</span>
+                    <p>¿Qué me hace feliz?</p>
+                </div>
+
+                <div class="reflection">
+                    <span>❓</span>
+                    <p>¿Qué quiero cambiar?</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FRUTOS -->
+
+        <section
+            id="frutos-section"
+            class="journey-section"
+            data-active-part="frutos"
+        >
+
+            <div class="section-number">05</div>
+
+            <h2>🍎 Tus frutos</h2>
+
+            <p class="section-intro">
+                Los frutos representan aquello que hemos
+                aprendido y construido a lo largo de nuestra vida.
+            </p>
+
+            <div class="instruction">
+                <span>💡</span>
+                Haz clic en las manzanas.
+            </div>
+
+            <div class="fruit-grid">
+
+                <div class="fruit-card">
+
+                    <span>🍎</span>
+
+                    <h3>Experiencia</h3>
+
+                    <p>
+                        Lo que aprendemos al vivir.
+                    </p>
+
+                </div>
+
+                <div class="fruit-card">
+
+                    <span>🍎</span>
+
+                    <h3>Conocimiento</h3>
+
+                    <p>
+                        Lo que descubrimos y comprendemos.
+                    </p>
+
+                </div>
+
+                <div class="fruit-card">
+
+                    <span>🍎</span>
+
+                    <h3>Identidad</h3>
+
+                    <p>
+                        La persona en la que nos hemos convertido.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EL ESTUDIANTE
+        ========================== -->
+
+        <section
+            id="student-section"
+            class="journey-section student-section"
+        >
+
+            <div class="student-content">
+
+                <div class="section-number">06</div>
+
+                <h2>🎓 El estudiante</h2>
+
+                <p class="section-intro">
+
+                    La película mexicana
+                    <strong>El estudiante</strong>
+                    nos muestra que aprender no tiene una edad
+                    y que siempre podemos seguir construyendo
+                    nuestra historia.
+
+                </p>
+
+                <div class="movie-card">
+
+                    <div class="movie-icon">
+                        🎬
+                    </div>
+
+                    <h3>
+                        Aprender también es crecer
+                    </h3>
+
+                    <p>
+                        El conocimiento puede aparecer en
+                        diferentes momentos de nuestra vida.
+                        Nunca dejamos de aprender de los demás
+                        ni de nosotros mismos.
+                    </p>
+
+                    <a
+                        href="https://www.youtube.com/results?search_query=El+Estudiante+pelicula+mexicana"
+                        target="_blank"
+                        class="movie-button"
+                    >
+                        ▶ Ver contenido relacionado
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL -->
+
+        <section
+            id="final-section"
+            class="final-section"
+        >
+
+            <div class="final-tree">
+                🌳
+            </div>
+
+            <h2>
+                ¿Cuál es tu historia?
+            </h2>
+
+            <p>
+                Un árbol no crece de un día para otro.
+                Necesita raíces, tiempo, decisiones,
+                aprendizajes y experiencias.
+            </p>
+
+            <p>
+                Nosotros también.
+            </p>
+
+            <button id="restart-btn">
+                ↻ Volver a comenzar
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         MODAL
+    ========================== -->
+
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <button
+                id="close-modal"
+                class="close-modal"
+            >
+                ×
+            </button>
+
+            <div id="modal-icon">🌱</div>
+
+            <h2 id="modal-title">
+                Título
+            </h2>
+
+            <p id="modal-text">
+                Información.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
